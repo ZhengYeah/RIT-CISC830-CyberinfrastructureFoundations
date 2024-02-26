@@ -8,3 +8,5 @@ Solutions of assignments for the course CISC-830 Cyberinfrastructure Foundations
   * Faster solution: 10^6 numbers a thread using `std::sort`, then merge all the threads. $O(\log n * \log n)$ time complexity.
   * The complexity of counting sort under multiple threads is limited by the `max()` and `write(index++)` process.
 
+* Assignment 2: Nearest Neighbor in DAG
+  
