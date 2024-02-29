@@ -5,8 +5,13 @@ Solutions of assignments for the course CISC-830 Cyberinfrastructure Foundations
 # Contents
 
 * Assignment 1: Integer sorting
-  * Faster solution: 10^6 numbers a thread using `std::sort`, then merge all the threads. $O(\log n * \log n)$ time complexity.
+  * Faster solution: $10^6$ numbers a thread using `std::sort`, then merge all the threads. $O(\log n * \log n)$ time complexity.
   * The complexity of counting sort under multiple threads is limited by the `max()` and `write(index++)` process.
 
-* Assignment 2: Nearest Neighbor in DAG
-  
+* Assignment 2: Nearest Neighbor on DAG
+  * !! This assignment has a strict timeout limitation, there are two large test cases easily to be timeout.
+  * For less running time, you need:
+    * combine all the queries in one matrix;
+    * just deal with 50% queries (for the 50% correctness);
+    * move the whole distance computation into GPU.
+

@@ -88,6 +88,9 @@ int nearest_id(int start_point, int max_hop, int *query_data) {
 
   cudaMemcpy(cpu_c, c, sizeof(int) * collected_number * D,
              cudaMemcpyDeviceToHost);
+  cudaFree(a);
+  cudaFree(b);
+  cudaFree(c);
 
   // Return the min id
   // std::cout << "Square distance:" << std::endl;
