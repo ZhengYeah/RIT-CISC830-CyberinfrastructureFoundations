@@ -2,6 +2,7 @@
 // 1. CUDA computation: matmul, transpose
 // 2. OMP computation: others
 
+#include <algorithm>
 #include <cmath>
 #include <cstddef>
 #include <cstdio>
