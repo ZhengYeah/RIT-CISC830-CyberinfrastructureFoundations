@@ -39,7 +39,7 @@ int nearest_id(int start_point, int max_hop, int *query_data) {
   int *collected_set_matrix = new int[V * D];
   int collected_number = 0;
 
-  // DFS for hops
+  // BFS for hops
   while (!q.empty()) {
     auto now = q.front();
     q.pop();

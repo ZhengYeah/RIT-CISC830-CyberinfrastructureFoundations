@@ -14,6 +14,8 @@ Solutions of assignments for the course CISC-830 Cyberinfrastructure Foundations
   * This assignment has a *strict timeout limitation*, there are two large test cases easily to be timeout.
   * For less running time, you need:
     * combine all the queries in one matrix;
-    * just deal with 50% queries (for the 50% correctness);
-    * move the whole distance computation into GPU.
+    * and move the whole distance computation into GPU.    
 
+* Assignment 2: Tensor Library
+  * Passes all test cases in the time limit.
+  * Faster solution: for a sequence of operation of each tensor in the python script, maintain the last result in CUDA memory (no `cudafree()`), e.g. using a pair of "old-new" variables.
