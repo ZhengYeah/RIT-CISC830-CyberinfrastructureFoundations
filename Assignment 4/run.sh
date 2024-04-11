@@ -1,1 +1,1 @@
-./discretelog $1 $2
+./discretelog_bsbg_cuda $1 $2
