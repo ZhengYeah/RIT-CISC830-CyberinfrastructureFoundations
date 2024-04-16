@@ -16,6 +16,10 @@ Solutions of assignments for the course CISC-830 Cyberinfrastructure Foundations
     * combine all the queries in one matrix;
     * and move the whole distance computation into GPU.    
 
-* Assignment 2: Tensor Library
+* Assignment 3: Tensor Library
   * Passes all test cases in the time limit.
   * Faster solution: for a sequence of operation of each tensor in the python script, maintain the last result in CUDA memory (no `cudafree()`), e.g. using a pair of "old-new" variables.
+
+* Assignment 4: Discrete Logarithm
+  * Passes all test cases in the time limit.
+  * Faster solution: CPU BSGS using stdlib hash table.
