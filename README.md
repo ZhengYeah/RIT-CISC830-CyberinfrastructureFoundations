@@ -22,4 +22,4 @@ Solutions of assignments for the course CISC-830 Cyberinfrastructure Foundations
 
 * Assignment 4: Discrete Logarithm
   * Passes all test cases in the time limit.
-  * Faster solution: CPU BSGS using stdlib hash table.
+  * Faster solution: CPU BSGS using unordered container.
